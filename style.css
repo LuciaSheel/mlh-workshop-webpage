@@ -1,0 +1,108 @@
+body {
+  max-width: 1200px;
+  background-color: #ACD8D3 /* Tiffany Blue */;
+  font-family:monospace, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #C0FDFB; /* Celeste */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #45555E /* Outer space */;
+  text-align: center;
+  text-transform: capitalize;
+}
+h2 {
+  color: #45555E;
+  text-transform: capitalize;
+}
+.fancy-card {
+  background-color: #C0FDFB; /* Celeste */;
+  color: #45555E;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px #45555E (0, 0, 0, 0.2);
+}
+
+.mini-card {
+  max-width: 160px;
+  background-color: #C0FDFB;
+  color: #1A2123 /* Eerie black */;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+p {
+  color: #1A2123 /* Eerie black */;
+  font-family: 'Libertinus Mono', monospace;
+}
+blockquote {
+  color: #1A2123;
+  font-family: 'Libertinus Mono', monospace;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #45555E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1A2123;
+}
+a {
+  color: #45555E;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+a:hover {
+  background-color: #45555E;
+  color: #C0FDFB;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#github-link {
+  margin-top: 20px;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #45555E;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  z-index: 1000;
+}
+#scroll-to-top:hover {
+  background-color: #1A2123;
+}

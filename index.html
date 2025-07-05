@@ -1,102 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Lucia's MLH Workshop Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucia's MLH Workshop Page</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Libertinus+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-      body {
-        background-color: #ACD8D3 /* Tiffany Blue */;
-        font-family:monospace, sans-serif;
-      }
-      h1 {
-        color: #45555E /* Outer space */;
-        text-align: center;
-        text-transform: capitalize;
-      }
-      h2 {
-        color: #45555E;
-        text-transform: capitalize;
-      }
-      .fancy-card {
-        background-color: #C0FDFB; /* Celeste */;
-        color: #45555E;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px #45555E (0, 0, 0, 0.2);
-      }
-      p {
-        color: #1A2123 /* Eerie black */;
-        font-family: 'Libertinus Mono', monospace;
-      }
-      blockquote {
-        color: #1A2123;
-        font-family: 'Libertinus Mono', monospace;
-        text-align: center;
-      }
-      img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 10px;
-      }
-      button {
-        margin: 5px;
-        padding: 8px 16px;
-        background-color: #45555E;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: #1A2123;
-      }
-      a {
-        color: #45555E;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 3px 6px;
-        border-radius: 3px;
-      }
-      a:hover {
-        background-color: #45555E;
-        color: #C0FDFB;
-      }
-      .container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      #github-link {
-        margin-top: 20px;
-      }
-    </style>
   </head>
+
+  
   <body>
-    <h1>
-      Welcome to My MLH Workshop Webpage!
-    </h1>
-    <blockquote>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#random-image">Random Image</a></li>
+        <li><a href="#clicky">Click Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <header class="hero">
+      <h1 class="logo">Hi, I'm Lucia!</h1>
+      <h1>Welcome to My MLH Workshop Page!</h1>
+      <blockquote>
+        <p>
+          "In a world where you can be anything, be kind." - Clare Pooley
+        </p>
+      </blockquote>
+    </header>
+    
+    <main class="content">
+      <section id="welcome">
+        <h2 class="fancy-card">Welcome to My MLH Workshop Webpage!</h2>
+        <p>
+          This is my first webpage created during the Major League Hacking (MLH) workshop series. I am excited to share my journey of learning web development and other technologies.
+        </p>
+      </section>
+
+    
+    <section id="about">
+      <h2 class="fancy-card">About Me</h2>
+      <ul>
+        <li>My name is Lucia</li>
+        <li>I am learning web development</li>
+        <li>I love coding and technology</li>
+        <li>My favorite programming language is CSS</li>
+        <li>I enjoy solo and team building</li>
+      </ul>
       <p>
-        "In a world where you can be anything, be kind." - Clare Pooley
+        I am a participant in the Major League Hacking (MLH) workshop series, where I am learning about web development and other exciting technologies.
       </p>
-    </blockquote>
-    <button id="click-me">Click Me!</button>
-    <p id="btnMessage"></p>
-    <button id="resetBtn">Reset</button>
-    <p id="reset-message"></p>
-    <h2 class="fancy-card">About Me</h2>
-    <ul>
-      <li>My name is Lucia</li>
-      <li>I am learning web development</li>
-      <li>I love coding and technology</li>
-      <li>My favorite programming language is CSS</li>
-      <li>I enjoy solo and team building</li>
-    </ul>
-    <p>
-      I am a participant in the Major League Hacking (MLH) workshop series, where I am learning about web development and other exciting technologies.
-    </p>
+    </section>
+
+    <section id="skills">
+      <h2 class="fancy-card">Skills</h2>
+      <div class="skills-section">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Express.js</span>
+        <span class="skill">MongoDB</span>
+        <span class="skill">Git</span>
+        <span class="skill">GitHub</span>
+      </section>
+    
+    <section id="projects">
     <h2 class="fancy-card">My Top 5 GitHub Projects</h2>
     <ol>
       <li>Portfolio</li>
@@ -105,17 +80,54 @@
       <li>Memory Game</li>
       <li>RPS Game</li>
     </ol>
-    <p id="github-link" class="fancy-card">
+    </section>
+
+    <section id="github" class="mini-card">
       <a href="https://github.com/LuciaSheel" target="_blank">Visit my GitHub!</a>
-    </p>
-    <p>
-      Here is a random image from <a href="https://picsum.photos/" target="_blank">Picsum Photos</a>:
-    </p>
+    </section>
+
+    <section id="random-image">
+      <h2 class="fancy-card">Random Image Section</h2>
+      <p>Here is a random image from <a href="https://picsum.photos/" target="_blank">Picsum Photos</a></p>
+    </section>
+   
     <div class="container">
       <img src="https://picsum.photos/200" alt="Random image" />
       <img src="https://picsum.photos/200" alt="Random image" />
       <img src="https://picsum.photos/200" alt="Random image" />
     </div>
+
+    <section id="clicky">
+      <h2 class="fancy-card">Click the Button Below!</h2>
+      <button id="click-me">Click Me!</button>
+      <p id="btnMessage"></p>
+      <button id="resetBtn">Reset</button>
+      <p id="reset-message"></p>
+    </section>
+
+    <section id="contact">
+      <h2 class="fancy-card">Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <button id="scrollToTop" class="scroll-to-top">↑</button>
+
+    <footer>
+      <p>&copy; 2025 Lucia Sheel. All rights reserved.</p>
+    </footer> 
+  </main>       
+
     <script src="script.js"></script>
   </body>
 </html>
